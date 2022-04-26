@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fix the connection to port 80
+sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
+service nginx restart
